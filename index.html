@@ -419,7 +419,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo cinzel">BIZZ.IA · 5×2</a>
-  <a href="#calc" class="nav-cta cinzel">Calcular Grátis</a>
+  <a href="#preco" class="nav-cta cinzel">Quero a Calculadora</a>
 </nav>
 
 <!-- ══ HERO ══ -->
@@ -440,7 +440,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
         A Escala 5×2 é a redução de jornada <strong style="color:var(--tx);font-style:normal;">mais rápida de implementar</strong> que o Brasil já votou — sem transição negociada com quem assina a folha. Descubra em 30 segundos, com os números da <strong style="color:var(--cu2);font-style:normal;">sua</strong> empresa, quanto isso vai pesar. Em reais, não em juridiquês.
       </p>
       <div class="hero-cta-group">
-        <button class="btn-cu cinzel" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">Calcular Meu Impacto — Grátis</button>
+        <button class="btn-cu cinzel" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">Ver o Impacto Real</button>
         <button class="btn-ghost cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Quero o Protocolo</button>
       </div>
       <div style="margin-top:16px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--txd);text-transform:uppercase;">🔒 Baseado na CLT e em dados do Ministério do Trabalho · Resultado em reais</div>
@@ -462,8 +462,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
             <div class="mock-inputs">
               <div class="mock-inp">
                 <div class="mock-inp-lbl cinzel">Funcionários</div>
-                <div class="mock-inp-val cinzel">24</div>
-                <div class="mock-inp-bar" style="width:68%"></div>
+                <div class="mock-inp-val cinzel">27</div>
+                <div class="mock-inp-bar" style="width:72%"></div>
               </div>
               <div class="mock-inp">
                 <div class="mock-inp-lbl cinzel">Salário Médio</div>
@@ -484,19 +484,19 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
             <div class="mock-results">
               <div class="mock-res no">
                 <div class="mock-res-lbl cinzel">Hora Extra / Mês</div>
-                <div class="mock-res-val no cinzel">R$ 5.840</div>
+                <div class="mock-res-val no cinzel">R$ 10.203</div>
               </div>
               <div class="mock-res ok">
                 <div class="mock-res-lbl cinzel">Meta Produtividade</div>
-                <div class="mock-res-val ok cinzel">+9,1%</div>
+                <div class="mock-res-val ok cinzel">+10,0%</div>
               </div>
               <div class="mock-res feat">
                 <div class="mock-res-lbl cinzel">Custo Anual</div>
-                <div class="mock-res-val cinzel">R$ 70.080</div>
+                <div class="mock-res-val cinzel">R$ 122.436</div>
               </div>
               <div class="mock-res">
                 <div class="mock-res-lbl cinzel">Novos FTEs</div>
-                <div class="mock-res-val cinzel">2,4</div>
+                <div class="mock-res-val cinzel">2,7</div>
               </div>
             </div>
           </div>
@@ -633,104 +633,89 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
 <div class="sec" id="calc">
   <div class="sec-in">
     <div class="reveal" style="text-align:center;margin-bottom:40px;">
-      <span class="s-tag cinzel">Chega de achismo · Dados do seu negócio</span>
-      <h2 class="s-h2 cinzel">Veja a conta da SUA empresa.<br>Em 30 segundos.</h2>
+      <span class="s-tag cinzel">Exemplo real · Veja o que a calculadora revela</span>
+      <h2 class="s-h2 cinzel">Uma loja de 27 pessoas.<br>Veja o tamanho da conta.</h2>
       <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
     </div>
 
     <div class="reveal">
 
-      <!-- INPUTS -->
+      <!-- INPUTS (FIXOS — exemplo) -->
       <div style="background:var(--bg2);border:1px solid var(--bd2);border-radius:14px;padding:28px;margin-bottom:16px;">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;">
+        <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--cu);text-transform:uppercase;margin-bottom:18px;text-align:center;">Cenário de demonstração</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;">
           <div class="c-field">
             <label class="c-lbl cinzel">Funcionários</label>
-            <input type="number" id="c-nf" class="c-inp" value="10" min="1" oninput="cr()">
+            <div class="c-inp cinzel" style="background:var(--bg3);border:1px solid #1F1A15;color:var(--cu2);">27</div>
           </div>
           <div class="c-field">
-            <label class="c-lbl cinzel">Salário Médio (R$)</label>
-            <input type="number" id="c-sl" class="c-inp" value="2500" min="1412" oninput="cr()">
+            <label class="c-lbl cinzel">Salário Médio</label>
+            <div class="c-inp cinzel" style="background:var(--bg3);border:1px solid #1F1A15;color:var(--cu2);">R$ 3.200</div>
           </div>
           <div class="c-field">
             <label class="c-lbl cinzel">Jornada Atual</label>
-            <select id="c-hr" class="c-inp c-sel" onchange="cr()">
-              <option value="44">44 h/semana</option>
-              <option value="42">42 h/semana</option>
-              <option value="40">40 h/semana</option>
-            </select>
+            <div class="c-inp cinzel" style="background:var(--bg3);border:1px solid #1F1A15;color:var(--cu2);">44 h/sem</div>
           </div>
           <div class="c-field">
             <label class="c-lbl cinzel">Setor</label>
-            <select id="c-st" class="c-inp c-sel" onchange="cr()">
-              <option value="geral">Geral / Serviços</option>
-              <option value="varejo">Varejo</option>
-              <option value="saude">Saúde / Clínicas</option>
-              <option value="industria">Indústria</option>
-              <option value="tech">Tecnologia</option>
-            </select>
+            <div class="c-inp cinzel" style="background:var(--bg3);border:1px solid #1F1A15;color:var(--cu2);">Varejo</div>
           </div>
         </div>
       </div>
 
-      <!-- FREE RESULTS (3 visible) -->
-      <div class="r-grid">
+      <!-- RESULTADOS REAIS (6 indicadores) -->
+      <div class="r-grid" style="grid-template-columns:repeat(3,1fr);">
         <div class="r-cell">
           <div class="r-lbl cinzel">Gap Semanal</div>
-          <div class="r-num cinzel" id="r1">4h</div>
+          <div class="r-num cinzel">4h</div>
           <div class="r-src">por funcionário</div>
         </div>
         <div class="r-cell">
           <div class="r-lbl cinzel">Hora Extra / Mês</div>
-          <div class="r-num red cinzel" id="r2">—</div>
+          <div class="r-num red cinzel">R$ 10.203</div>
           <div class="r-src">CLT Art. 59 · 50%</div>
         </div>
         <div class="r-cell">
           <div class="r-lbl cinzel">Produtividade</div>
-          <div class="r-num grn cinzel" id="r3">—</div>
+          <div class="r-num grn cinzel">+10,0%</div>
           <div class="r-src">necessária / hora</div>
+        </div>
+        <div class="r-cell">
+          <div class="r-lbl cinzel">Hora Extra / Ano</div>
+          <div class="r-num red cinzel">R$ 122.436</div>
+          <div class="r-src">12 meses</div>
+        </div>
+        <div class="r-cell">
+          <div class="r-lbl cinzel">Novos Funcionários</div>
+          <div class="r-num cinzel">2,7</div>
+          <div class="r-src">para cobrir o gap</div>
+        </div>
+        <div class="r-cell">
+          <div class="r-lbl cinzel">Nova Contratação / Mês</div>
+          <div class="r-num red cinzel">R$ 14.429</div>
+          <div class="r-src">fator encargos 1,67×</div>
         </div>
       </div>
 
-      <!-- LOCKED RESULTS (3 behind gate) -->
-      <div class="locked-panel">
-        <div class="locked-blur">
-          <div class="r-grid" style="margin:0;border-radius:10px;">
-            <div class="r-cell">
-              <div class="r-lbl cinzel">Custo Hora Extra / Ano</div>
-              <div class="r-num red cinzel">R$ 99.999</div>
-              <div class="r-src">12 meses</div>
-            </div>
-            <div class="r-cell">
-              <div class="r-lbl cinzel">Novos FTEs</div>
-              <div class="r-num cinzel">9,9</div>
-              <div class="r-src">para cobrir o gap</div>
-            </div>
-            <div class="r-cell">
-              <div class="r-lbl cinzel">Nova Contratação / Mês</div>
-              <div class="r-num red cinzel">R$ 99.999</div>
-              <div class="r-src">fator 1,67×</div>
-            </div>
-          </div>
-        </div>
-        <div class="locked-overlay">
-          <div style="font-size:22px;">🔒</div>
-          <div class="locked-overlay-lbl cinzel">Desbloqueie com sua chave</div>
-          <div class="locked-overlay-sub">Custo anual, novos FTEs e comparativo de cenários estão no produto.</div>
-          <button class="btn-cu cinzel" style="padding:11px 24px;font-size:10px;" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Comprar — R$ 37</button>
-        </div>
+      <!-- VEREDICTO -->
+      <div style="background:linear-gradient(135deg,#0A0800,#0F0A02);border:1px solid var(--cu);border-radius:16px;padding:28px;margin-top:18px;text-align:center;">
+        <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--cu);text-transform:uppercase;margin-bottom:10px;">O veredicto deste exemplo</div>
+        <p style="font-size:18px;line-height:1.7;color:var(--tx);">
+          Só de hora extra, essa loja gastaria <strong style="color:var(--no);">R$ 122 mil por ano</strong> — quase o salário de <strong style="color:var(--cu2);">3 funcionários novos</strong>. E esse é só um cenário.
+        </p>
       </div>
 
       <!-- GATE CARD -->
       <div class="gate-card">
         <div class="gate-inner">
-          <span class="gate-lock">🔐</span>
-          <div class="gate-title cinzel">Diagnóstico Completo Bloqueado</div>
-          <div class="gate-sub">Veredicto de estratégia · Análise por setor · 3 cenários detalhados · Exportação PDF</div>
+          <span class="gate-lock">🎯</span>
+          <div class="gate-title cinzel">Agora rode com os SEUS números</div>
+          <div class="gate-sub">Coloque seu nº de funcionários, salário e setor — e veja a sua conta, os 3 cenários comparados e o caminho mais barato para a sua realidade.</div>
           <div class="gate-btns">
-            <button class="btn-cu cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Desbloquear — R$ 37</button>
+            <button class="btn-cu cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Quero a Calculadora — R$ 37</button>
             <button class="btn-ghost cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Ver Protocolo Completo</button>
           </div>
-          <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--txd);margin-top:14px;text-transform:uppercase;">Chave entregue por e-mail em até 60 segundos</div>
+          <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--txd);margin-top:14px;text-transform:uppercase;">Acesso por e-mail em até 60 segundos · Garantia de 7 dias</div>
         </div>
       </div>
     </div>
@@ -915,7 +900,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
       </div>
       <div class="faq-item" onclick="tf(this)">
         <div class="faq-q cinzel">E se o Senado alterar o texto?<div class="faq-arr"></div></div>
-        <div class="faq-a">A calculadora e o guia são atualizados gratuitamente com o texto final, dentro do período de validade da sua chave.</div>
+        <div class="faq-a">A calculadora e o guia são atualizados com o texto final sem custo extra, dentro do período de validade da sua chave.</div>
       </div>
       <div class="faq-item" onclick="tf(this)">
         <div class="faq-q cinzel">R$ 147 não é caro?<div class="faq-arr"></div></div>
@@ -987,21 +972,8 @@ new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList
   .observe.bind(null)&&document.querySelectorAll('.reveal').forEach(el=>
     new IntersectionObserver(([e])=>{if(e.isIntersecting)el.classList.add('visible');},{threshold:.08}).observe(el));
 
-// ── CALCULATOR ──
-function fr(n){return isNaN(n)||!isFinite(n)?'—':'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});}
-function fp(n){return isNaN(n)||!isFinite(n)?'—':n.toFixed(1)+'%';}
-function cr(){
-  const nf=Math.max(1,parseInt(document.getElementById('c-nf').value)||1);
-  const sl=Math.max(1412,parseFloat(document.getElementById('c-sl').value)||1412);
-  const hr=parseInt(document.getElementById('c-hr').value)||44;
-  const gap=hr-40;
-  const he=(sl/220)*1.5*gap*4.33*nf;
-  const prod=((hr/40)-1)*100;
-  document.getElementById('r1').textContent=gap>0?gap+'h':'0h ✓';
-  document.getElementById('r2').textContent=gap>0?fr(he):'R$ 0,00';
-  document.getElementById('r3').textContent=gap>0?fp(prod):'0%';
-}
-document.addEventListener('DOMContentLoaded',cr);
+// (Calculadora interativa removida da LP — agora é demonstração fixa.
+//  A calculadora funcional é o produto pago, entregue após a compra.)
 
 // ── FAQ ──
 function tf(el){const o=el.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));if(!o)el.classList.add('open');}
