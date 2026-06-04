@@ -63,7 +63,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--tx);font-family:'Cormorant Garamond',serif;overflow-x:hidden;}
+body{background:var(--bg);color:var(--tx);font-family:'Cormorant Garamond',serif;font-weight:600;overflow-x:hidden;}
 .cinzel{font-family:'Cinzel',serif;}
 
 /* ── NAV ── */
@@ -118,8 +118,8 @@ nav{
 .hero-pill{
   display:inline-flex;align-items:center;gap:8px;
   background:rgba(184,115,51,.1);border:1px solid var(--bd);
-  border-radius:40px;padding:10px 22px;margin-bottom:28px;
-  font-size:15px;color:var(--txm);font-style:italic;
+  border-radius:40px;padding:12px 26px;margin-bottom:28px;
+  font-size:19px;color:var(--txm);font-style:italic;
   opacity:0;animation:fadeUp .8s .5s forwards;
 }
 .hero-pill span{color:var(--cu2);font-style:normal;font-weight:600;}
@@ -215,7 +215,7 @@ nav{
 .sec{padding:88px 5%;position:relative;z-index:1;}
 .sec.alt{background:var(--bg2);}
 .sec-in{max-width:1080px;margin:0 auto;}
-.s-tag{font-family:'Cinzel',serif;font-size:9px;letter-spacing:7px;color:var(--cu);text-transform:uppercase;display:block;margin-bottom:14px;}
+.s-tag{font-family:'Cinzel',serif;font-size:11px;letter-spacing:7px;color:var(--cu);text-transform:uppercase;display:block;margin-bottom:14px;}
 .s-h2{font-family:'Cinzel',serif;font-size:clamp(26px,3.5vw,48px);font-weight:700;letter-spacing:2px;line-height:1.1;}
 .divider{width:50px;height:2px;background:linear-gradient(90deg,var(--cu),var(--cu2));margin:18px 0 44px;}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s;}
@@ -241,7 +241,7 @@ nav{
 }
 .flow-step:hover .flow-ico{transform:translateY(-4px);}
 .flow-step:hover .flow-ico::after{opacity:1;}
-.flow-step-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--txm);text-transform:uppercase;line-height:1.4;}
+.flow-step-lbl{font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;color:var(--txm);text-transform:uppercase;line-height:1.4;}
 .flow-step-lbl strong{display:block;color:var(--tx);font-size:12px;margin-bottom:3px;letter-spacing:1px;}
 .flow-chevron{color:var(--cu);font-size:18px;opacity:.4;padding:0 4px;margin-bottom:24px;}
 @media(max-width:720px){.flow-chevron{display:none;}.flow{gap:24px;}}
@@ -257,20 +257,20 @@ nav{
 .get-cell::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cu),transparent);opacity:0;transition:opacity .3s;}
 .get-cell:hover::after{opacity:1;}
 .get-ico{font-size:32px;line-height:1;}
-.get-title{font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:1px;color:var(--tx);}
-.get-label{font-size:14px;color:var(--txm);font-style:italic;line-height:1.5;}
+.get-title{font-family:'Cinzel',serif;font-size:15px;font-weight:700;letter-spacing:1px;color:var(--tx);}
+.get-label{font-size:18px;color:var(--txm);font-style:italic;line-height:1.5;font-weight:600;}
 
 /* ── STAT NUMBERS ── */
 .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--bd2);border:1px solid var(--bd2);border-radius:16px;overflow:hidden;}
 .stat-cell{background:var(--bg2);padding:28px 20px;text-align:center;transition:background .2s;}
 .stat-cell:hover{background:var(--bg3);}
 .stat-n{font-family:'Cinzel',serif;font-size:42px;font-weight:900;color:var(--cu2);line-height:1;margin-bottom:6px;}
-.stat-l{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--txm);text-transform:uppercase;line-height:1.4;}
-.stat-s{font-size:11px;color:var(--txd);font-style:italic;margin-top:4px;}
+.stat-l{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--txm);text-transform:uppercase;line-height:1.4;}
+.stat-s{font-size:13px;color:var(--txd);font-style:italic;margin-top:4px;}
 
 /* ── CALCULATOR ── */
 .c-field{display:flex;flex-direction:column;gap:6px;}
-.c-lbl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--txm);text-transform:uppercase;}
+.c-lbl{font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--txm);text-transform:uppercase;}
 .c-inp{
   background:var(--bg3);border:1px solid #1F1A15;color:var(--tx);
   border-radius:8px;padding:13px 16px;
@@ -289,7 +289,7 @@ nav{
 .r-lbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:var(--txm);text-transform:uppercase;margin-bottom:8px;}
 .r-num{font-family:'Cinzel',serif;font-size:24px;font-weight:900;color:var(--cu2);line-height:1;margin-bottom:4px;}
 .r-num.red{color:var(--no);}.r-num.grn{color:var(--ok);}
-.r-src{font-size:10px;color:var(--txd);font-style:italic;}
+.r-src{font-size:12px;color:var(--txd);font-style:italic;}
 .r-locked{filter:blur(5px);user-select:none;cursor:not-allowed;}
 
 /* Gate card */
@@ -302,7 +302,7 @@ nav{
 .gate-inner{position:relative;z-index:1;}
 .gate-lock{font-size:36px;margin-bottom:14px;display:block;}
 .gate-title{font-family:'Cinzel',serif;font-size:18px;font-weight:700;letter-spacing:2px;margin-bottom:8px;}
-.gate-sub{font-size:17px;color:var(--txm);font-style:italic;max-width:420px;margin:0 auto 24px;line-height:1.6;}
+.gate-sub{font-size:21px;color:var(--txm);font-style:italic;max-width:480px;margin:0 auto 24px;line-height:1.6;font-weight:600;}
 .gate-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
 
 /* Locked overlay panels */
@@ -335,7 +335,7 @@ nav{
   text-transform:uppercase;
 }
 .p-name{font-family:'Cinzel',serif;font-size:18px;font-weight:700;letter-spacing:2px;margin-bottom:6px;}
-.p-tagline{font-size:16px;color:var(--txm);font-style:italic;margin-bottom:24px;}
+.p-tagline{font-size:20px;color:var(--txm);font-style:italic;margin-bottom:24px;font-weight:600;}
 .p-price{display:flex;align-items:flex-start;gap:3px;margin-bottom:4px;}
 .p-prefix{font-family:'Cinzel',serif;font-size:16px;color:var(--cu);margin-top:8px;font-weight:700;}
 .p-val{font-family:'Cinzel',serif;font-size:58px;font-weight:900;line-height:1;}
@@ -343,8 +343,8 @@ nav{
 .p-hr{height:1px;background:var(--bd2);margin-bottom:22px;}
 .p-list{list-style:none;margin-bottom:28px;}
 .p-list li{
-  display:flex;align-items:center;gap:10px;padding:7px 0;
-  font-size:15px;color:var(--txm);border-bottom:1px solid var(--bd2);
+  display:flex;align-items:center;gap:10px;padding:8px 0;
+  font-size:19px;color:var(--txm);border-bottom:1px solid var(--bd2);font-weight:600;
 }
 .p-list li:last-child{border-bottom:none;}
 .p-list li::before{content:'◆';color:var(--cu);font-size:8px;flex-shrink:0;}
@@ -369,7 +369,7 @@ nav{
 @keyframes movGrad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .mov-inner{background:var(--bg2);border-radius:13px;padding:36px 40px;text-align:center;}
 .mov-h{font-family:'Cinzel',serif;font-size:clamp(20px,3vw,32px);font-weight:700;letter-spacing:3px;margin-bottom:10px;}
-.mov-sub{font-size:18px;color:var(--txm);font-style:italic;margin-bottom:24px;}
+.mov-sub{font-size:22px;color:var(--txm);font-style:italic;margin-bottom:24px;font-weight:600;}
 .shimmer{
   background:linear-gradient(90deg,var(--cu) 0%,var(--cu2) 30%,var(--tx) 50%,var(--cu2) 70%,var(--cu) 100%);
   background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
@@ -383,13 +383,13 @@ nav{
 .faq-q{
   display:flex;justify-content:space-between;align-items:center;
   padding:20px 0;cursor:pointer;
-  font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:1px;
+  font-family:'Cinzel',serif;font-size:15px;font-weight:700;letter-spacing:1px;
   transition:color .2s;
 }
 .faq-q:hover{color:var(--cu);}
 .faq-arr{width:18px;height:18px;flex-shrink:0;border-right:1px solid var(--cu);border-bottom:1px solid var(--cu);transform:rotate(45deg);transition:transform .3s;margin-top:-4px;}
 .faq-item.open .faq-arr{transform:rotate(-135deg);margin-top:4px;}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;font-size:16px;color:var(--txm);line-height:1.65;font-style:italic;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;font-size:20px;color:var(--txm);line-height:1.65;font-style:italic;font-weight:600;}
 .faq-item.open .faq-a{max-height:320px;padding-bottom:18px;}
 
 /* FOOTER */
@@ -398,7 +398,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
 .ft-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;}
 .ft-links a{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--txd);text-decoration:none;text-transform:uppercase;transition:color .2s;}
 .ft-links a:hover{color:var(--cu);}
-.ft-legal{font-size:12px;color:var(--txd);line-height:1.7;max-width:680px;margin:0 auto;font-style:italic;}
+.ft-legal{font-size:15px;color:var(--txd);line-height:1.7;max-width:720px;margin:0 auto;font-style:italic;font-weight:600;}
 .ft-copy{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--txd);margin-top:16px;text-transform:uppercase;}
 
 /* ANIMATIONS */
@@ -436,14 +436,14 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
         <span>⚠</span>
         Quando virar lei, você tem <span>60 dias</span> para se adequar
       </div>
-      <p style="max-width:620px;margin:0 auto 26px;font-size:18px;line-height:1.6;color:var(--txm);font-style:italic;">
+      <p style="max-width:680px;margin:0 auto 26px;font-size:22px;line-height:1.6;color:var(--txm);font-style:italic;">
         A Escala 5×2 é a redução de jornada <strong style="color:var(--tx);font-style:normal;">mais rápida de implementar</strong> que o Brasil já votou — sem transição negociada com quem assina a folha. Descubra em 30 segundos, com os números da <strong style="color:var(--cu2);font-style:normal;">sua</strong> empresa, quanto isso vai pesar. Em reais, não em juridiquês.
       </p>
       <div class="hero-cta-group">
         <button class="btn-cu cinzel" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">Ver o Impacto Real</button>
         <button class="btn-ghost cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Quero o Protocolo</button>
       </div>
-      <div style="margin-top:16px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--txd);text-transform:uppercase;">🔒 Baseado na CLT e em dados do Ministério do Trabalho · Resultado em reais</div>
+      <div style="margin-top:16px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--txd);text-transform:uppercase;">🔒 Baseado na CLT e em dados do Ministério do Trabalho · Resultado em reais</div>
     </div>
 
     <!-- ACETERNITY CARD -->
@@ -524,7 +524,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
       <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
     </div>
 
-    <p class="reveal" style="text-align:center;font-size:19px;line-height:1.7;color:var(--txm);font-style:italic;margin-bottom:36px;">
+    <p class="reveal" style="text-align:center;font-size:23px;line-height:1.7;color:var(--txm);font-style:italic;margin-bottom:36px;">
       Menos horas pela mesma produção significa uma de três contas — e <strong style="color:var(--tx);font-style:normal;">duas delas saem caro</strong>:
     </p>
 
@@ -547,7 +547,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
 
     <div class="reveal" style="background:linear-gradient(135deg,rgba(192,57,43,.08),rgba(184,115,51,.05));border:1px solid rgba(192,57,43,.25);border-left:3px solid var(--no);border-radius:0 14px 14px 0;padding:24px 28px;margin-top:36px;">
       <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--no);text-transform:uppercase;margin-bottom:10px;">E tem o que ninguém te conta</div>
-      <p style="font-size:17px;line-height:1.7;color:var(--tx);">
+      <p style="font-size:21px;line-height:1.7;color:var(--tx);">
         Se o custo de produção sobe para <em>todo mundo</em>, seus fornecedores também repassam. <strong style="color:var(--cu2);">O insumo chega mais caro, a folha pesa mais</strong> — e sua margem é espremida dos dois lados ao mesmo tempo. Escolher errado aqui custa, fácil, <strong style="color:var(--no);">o salário de um funcionário por ano.</strong>
       </p>
     </div>
@@ -584,10 +584,10 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
         <div class="stat-s">IPEA · fev/2026</div>
       </div>
     </div>
-    <p class="reveal" style="text-align:center;font-size:15px;line-height:1.7;color:var(--txm);font-style:italic;margin-top:28px;max-width:760px;margin-left:auto;margin-right:auto;">
+    <p class="reveal" style="text-align:center;font-size:19px;line-height:1.7;color:var(--txm);font-style:italic;margin-top:28px;max-width:800px;margin-left:auto;margin-right:auto;">
       As estimativas variam conforme a metodologia — mas todas apontam para a mesma direção: <strong style="color:var(--tx);font-style:normal;">a conta sobe, e quem tem menos gente é quem sente mais.</strong> A microempresa é a mais exposta, justamente por ter menos margem para absorver.
     </p>
-    <p class="reveal" style="text-align:center;font-size:11px;color:var(--txd);font-style:italic;margin-top:14px;max-width:820px;margin-left:auto;margin-right:auto;line-height:1.6;">
+    <p class="reveal" style="text-align:center;font-size:14px;color:var(--txd);font-style:italic;margin-top:14px;max-width:860px;margin-left:auto;margin-right:auto;line-height:1.6;">
       Fontes: Confederação Nacional da Indústria (CNI), Confederação Nacional do Comércio (CNC), Sebrae e Instituto de Pesquisa Econômica Aplicada (IPEA), estudos de 2026 sobre a redução da jornada para 40h. Estimativas — valores variam por setor e metodologia.
     </p>
   </div>
@@ -700,7 +700,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
       <!-- VEREDICTO -->
       <div style="background:linear-gradient(135deg,#0A0800,#0F0A02);border:1px solid var(--cu);border-radius:16px;padding:28px;margin-top:18px;text-align:center;">
         <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--cu);text-transform:uppercase;margin-bottom:10px;">O veredicto deste exemplo</div>
-        <p style="font-size:18px;line-height:1.7;color:var(--tx);">
+        <p style="font-size:22px;line-height:1.7;color:var(--tx);">
           Só de hora extra, essa loja gastaria <strong style="color:var(--no);">R$ 122 mil por ano</strong> — quase o salário de <strong style="color:var(--cu2);">3 funcionários novos</strong>. E esse é só um cenário.
         </p>
       </div>
@@ -715,7 +715,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
             <button class="btn-cu cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Quero a Calculadora — R$ 37</button>
             <button class="btn-ghost cinzel" onclick="document.getElementById('preco').scrollIntoView({behavior:'smooth'})">Ver Protocolo Completo</button>
           </div>
-          <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--txd);margin-top:14px;text-transform:uppercase;">Acesso por e-mail em até 60 segundos · Garantia de 7 dias</div>
+          <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--txd);margin-top:14px;text-transform:uppercase;">Acesso por e-mail em até 60 segundos · Garantia de 7 dias</div>
         </div>
       </div>
     </div>
@@ -730,7 +730,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
       <h2 class="s-h2 cinzel">Saber o custo é o começo.<br>O Protocolo é o que você <em>faz</em> com ele.</h2>
       <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
     </div>
-    <p class="reveal" style="text-align:center;font-size:18px;line-height:1.7;color:var(--txm);font-style:italic;margin-bottom:36px;">
+    <p class="reveal" style="text-align:center;font-size:22px;line-height:1.7;color:var(--txm);font-style:italic;margin-bottom:36px;">
       A calculadora te mostra <strong style="color:var(--tx);font-style:normal;">quanto</strong>. O Protocolo 5×2 te mostra <strong style="color:var(--cu2);font-style:normal;">como</strong> — um plano personalizado que você e sua equipe colocam em prática rápido:
     </p>
     <div class="get-grid reveal" style="margin-bottom:48px;">
@@ -755,7 +755,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
         <div class="get-label">Todo o diagnóstico financeiro, dentro do pacote completo</div>
       </div>
     </div>
-    <p class="reveal" style="text-align:center;font-size:19px;color:var(--cu2);font-style:italic;">
+    <p class="reveal" style="text-align:center;font-size:23px;color:var(--cu2);font-style:italic;">
       De "quanto vou perder" para "qual é o meu plano" — em uma tarde.
     </p>
   </div>
