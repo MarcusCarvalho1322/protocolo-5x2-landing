@@ -52,18 +52,18 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#000;--bg2:#0A0A0A;--bg3:#111;--bg4:#1A1A1A;
   --cu:#B87333;--cu2:#D4A853;
-  --tx:#F0EDE8;--txm:#998E82;--txd:#5A5248;
+  --tx:#F4F1EC;--txm:#BCB2A3;--txd:#6E6456;
   --bd:rgba(184,115,51,.2);--bd2:rgba(255,255,255,.04);
   --ok:#5BB85B;--no:#C0392B;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--tx);font-family:'Cormorant Garamond',serif;font-weight:600;overflow-x:hidden;}
+body{background:var(--bg);color:var(--tx);font-family:'Cormorant Garamond',serif;font-weight:700;overflow-x:hidden;}
 .cinzel{font-family:'Cinzel',serif;}
 
 /* ── NAV ── */
@@ -258,7 +258,7 @@ nav{
 .get-cell:hover::after{opacity:1;}
 .get-ico{font-size:32px;line-height:1;}
 .get-title{font-family:'Cinzel',serif;font-size:15px;font-weight:700;letter-spacing:1px;color:var(--tx);}
-.get-label{font-size:18px;color:var(--txm);font-style:italic;line-height:1.5;font-weight:600;}
+.get-label{font-size:19px;color:var(--txm);font-style:italic;line-height:1.55;font-weight:700;}
 
 /* ── STAT NUMBERS ── */
 .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--bd2);border:1px solid var(--bd2);border-radius:16px;overflow:hidden;}
@@ -335,7 +335,7 @@ nav{
   text-transform:uppercase;
 }
 .p-name{font-family:'Cinzel',serif;font-size:18px;font-weight:700;letter-spacing:2px;margin-bottom:6px;}
-.p-tagline{font-size:20px;color:var(--txm);font-style:italic;margin-bottom:24px;font-weight:600;}
+.p-tagline{font-size:21px;color:var(--txm);font-style:italic;margin-bottom:24px;font-weight:700;}
 .p-price{display:flex;align-items:flex-start;gap:3px;margin-bottom:4px;}
 .p-prefix{font-family:'Cinzel',serif;font-size:16px;color:var(--cu);margin-top:8px;font-weight:700;}
 .p-val{font-family:'Cinzel',serif;font-size:58px;font-weight:900;line-height:1;}
@@ -344,7 +344,7 @@ nav{
 .p-list{list-style:none;margin-bottom:28px;}
 .p-list li{
   display:flex;align-items:center;gap:10px;padding:8px 0;
-  font-size:19px;color:var(--txm);border-bottom:1px solid var(--bd2);font-weight:600;
+  font-size:20px;color:var(--tx);border-bottom:1px solid var(--bd2);font-weight:700;
 }
 .p-list li:last-child{border-bottom:none;}
 .p-list li::before{content:'◆';color:var(--cu);font-size:8px;flex-shrink:0;}
@@ -389,7 +389,7 @@ nav{
 .faq-q:hover{color:var(--cu);}
 .faq-arr{width:18px;height:18px;flex-shrink:0;border-right:1px solid var(--cu);border-bottom:1px solid var(--cu);transform:rotate(45deg);transition:transform .3s;margin-top:-4px;}
 .faq-item.open .faq-arr{transform:rotate(-135deg);margin-top:4px;}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;font-size:20px;color:var(--txm);line-height:1.65;font-style:italic;font-weight:600;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;font-size:21px;color:var(--txm);line-height:1.7;font-style:italic;font-weight:600;}
 .faq-item.open .faq-a{max-height:320px;padding-bottom:18px;}
 
 /* FOOTER */
