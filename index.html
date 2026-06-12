@@ -50,6 +50,32 @@
   ]
 }
 </script>
+<!-- ══ GOOGLE ANALYTICS 4 ══ -->
+<!-- SUBSTITUA G-XXXXXXXXXX pelo seu Measurement ID do GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- ══ META PIXEL ══ -->
+<!-- SUBSTITUA SEU_PIXEL_ID pelo ID do seu Pixel do Meta -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SEU_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -701,7 +727,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
       <div style="background:linear-gradient(135deg,#0A0800,#0F0A02);border:1px solid var(--cu);border-radius:16px;padding:28px;margin-top:18px;text-align:center;">
         <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--cu);text-transform:uppercase;margin-bottom:10px;">O veredicto deste exemplo</div>
         <p style="font-size:22px;line-height:1.7;color:var(--tx);">
-          Só de hora extra, essa loja gastaria <strong style="color:var(--no);">R$ 122 mil por ano</strong> — quase o salário de <strong style="color:var(--cu2);">3 funcionários novos</strong>. E esse é só um cenário.
+          Só de hora extra, essa loja gastaria <strong style="color:var(--no);">R$ 122 mil por ano</strong> — equivalente ao <strong style="color:var(--cu2);">salário bruto de 3 funcionários</strong>. E esse é só um cenário.
         </p>
       </div>
 
@@ -922,12 +948,11 @@ footer{background:var(--bg2);border-top:1px solid var(--bd2);padding:40px 5%;tex
 <footer>
   <div class="ft-logo cinzel">BIZZ.IA · Intelligence Ecosystem</div>
   <div class="ft-links">
-    <a href="#">bizzia.com.br</a>
-    <a href="#">NEX.IA</a>
-    <a href="#">JURIS.IA</a>
-    <a href="#">ATLAS-FORENSE</a>
+    <a href="privacidade.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="mailto:marcuscc@bizzia.com.br">Contato</a>
   </div>
-  <div class="ft-legal">Produto informativo e educacional. Não constitui consultoria jurídica ou trabalhista. PEC aprovada pela Câmara dos Deputados em 27/05/2026 — aguarda Senado Federal.</div>
+  <div class="ft-legal">Produto informativo e educacional. Não constitui consultoria jurídica ou trabalhista. PEC aprovada pela Câmara dos Deputados em 27/05/2026 — aguarda Senado Federal. BIZZ.IA Intelligence Ecosystem · CNPJ em constituição · Sinop, MT.</div>
   <div class="ft-copy cinzel">© 2026 BIZZ.IA Intelligence Ecosystem · Todos os direitos reservados</div>
 </footer>
 
